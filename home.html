@@ -1,0 +1,227 @@
+<html>
+    <meta charset = "utf-8" >
+
+    <title> Beauty kits - makeup and beauty products  </title>
+    <head>
+    <link rel="stylesheet" href="mystyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+       <style> 
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 60%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    margin-left: 15%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.6;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+</style>
+    </head>
+    
+    
+<body>
+    
+    
+  
+    <header>
+   
+       <a href="home.html">
+       <img src="images/beautykits.svg" alt="beautykits" width="100%" height="20%"></a>
+   </header>
+ 
+  
+ 
+   <div class="topnav" id="myTopnav">
+        <a href="home.html" ><b>HOME </b></a>
+        <a href="perfumes.html" ><b>PERFUMES</b></a>
+        <a href="MakeUp.html" ><b>MAKE UP</b></a>
+               <a href="MYBAG.html" ><b>MY BAG</b></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+       <form class="search" action="home.html" style="margin-left: 50%;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+    
+
+
+
+   
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+            <img src="images/gigihaddid.jpeg" alt="Gigi Hadid MAYBELLINE" style="width:100%">
+                <div class="text"><B>Gigi Haddid Maybelline</B></div>
+        </div>
+
+    <div class="mySlides fade">
+            <img src="images/RIHANNA.jpeg" alt="Rihanna MAC" style="width:100%" >
+                <div class="text"><B>Rihanna MAC</B></div>
+    </div>
+
+    <div class="mySlides fade">
+            <img src='images/angelinajo.jpeg' alt="Angelina Jolie LANCOME" style="width:100%">
+                <div class="text"><B>Angelina Jolie LANCOME</B></div>
+    </div>
+
+    </div>
+    
+<!--- SLIDESHOW // RESPNAV --->    
+<script>
+     var slideIndex = 0;
+     showSlides();
+     function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+     slideIndex++;
+         
+     if (slideIndex > slides.length)
+            {slideIndex = 1}
+         
+     slides[slideIndex-1].style.display = "block";
+         
+     setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+                
+                
+            
+   function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+ <div class="row">
+        <div class="column2">
+          <div class="container">
+                 <img src="images/maybelline-color-sensational-made-for-all-lips-385-ruby-for-me-10g.jpg" alt="lipstick" class="image">
+  <div class="middle">
+      <a href="MakeUp.html">
+    <div class="button">MakeUp</div>
+  </a></div>
+            </div>
+        </div>
+        
+        <div class="column2">
+            <div class="container">
+                 <img src="images/lancome.jpg"alt="Perfume" class="image" >
+  <div class="middle">
+      <a href="perfumes.html">
+    <div class="button">Perfumes</div>
+  </a></div>
+            </div>
+        </div>
+        
+
+    </div>
+   
+    
+    <div class="row" style="margin-top: 5%">
+        <div class="column2">
+      
+            <h4 style="font-size:3vw ; font-family: Roboto,sans-serif">
+            Welcome to BEAUTY KITS , 
+                enjoy exclusive products ,gifts, and complimentary delivery on all orders.
+            </h4>
+                 </div> 
+         
+        <div class="column2">
+            <div class="container">
+              <div class="gallery">
+                            <img src="images/beautykitsshop.jpg" style="border-radius: 100px" >
+                  <div class="desc"><I>BEAUTY KITS shop-Lebanon Beirut</I><p></p></div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+ <footer >  
+      <ul>
+<section class="section-contained footer-sub-section">
+<div class="footer-sub ">
+  <div class="footer-sub-item">
+    <a href="contactus.html">
+  		<img src="images/ask-shape.svg">
+   		 <h3 style="color: white">Ask Our Expert</h3>
+    </a>
+  </div>
+  
+  <div class="footer-sub-item">
+    <a href="Loyalityprogram.html">
+  		<img src="images/loyalty-shape.svg">
+    	<h3 style="color: white" >Loyalty Program</h3>
+    </a>
+  </div>
+  <div class="footer-sub-item" style="margin-right: 2%">
+<a href="MYBAG.html">
+  		<img src="images/loyalty-shape.svg">
+   		 <h3 style="color: white">Secure Shopping</h3>
+      </a>
+  </div>
+</div>
+</section>    
+
+    
+
+    <li>
+        <a href="contactus.html" ><b>CONTACT US </b></a></li>
+    
+    <li>
+        <a href="Feedback.htm" ><b>FEEDBACKS </b></a></li>
+    
+    <li>
+        <a href="FAQ.html" ><b>FAQ </b></a></li>
+         
+                <li>
+                    <a href="signin.html"><b> CONNECT ! </b></a>
+                   
+                   
+    
+                   
+                </li>
+         
+
+    
+    
+      
+      <p font-family='Roboto' style="color: white;margin-left: 84%">Copyright &copy; 2020 - Beauty Kits</p>
+          </ul>
+</footer>
+       
+
+</body>
+</html>
